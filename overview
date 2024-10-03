@@ -1,0 +1,35 @@
+# Credit Risk Assessment Project
+
+## Overview
+This project aims to assess the **risk score** for each credit applicant. The calculated score will then be used to determine whether to **approve or reject the loan**. 
+
+To achieve this, two machine learning models are used:
+1. **Regression Model**: to calculate the risk score.
+2. **Classification Model**: to determine if the credit should be granted or denied based on the predicted risk score.
+
+## Project Structure
+
+### 1. Regression Model
+The regression model is designed to predict the risk score of each applicant using **forest regression**.
+
+Steps:
+- **Data Preparation**
+- **Determine Variables**: 
+  - Input variable: `X_regression`
+  - Target variable: `y_regression`
+- **Build the Regression Pipeline**
+- **Train the Model**: Using `X_regression_train` and `y_regression_train`.
+- **Predict the Risk Score**
+- **Model Evaluation**: Using **RAE** and **RMSE** metrics.
+
+### 2. Classification Model
+Based on the predicted risk score, the classification model will classify whether the credit is **approved** or **rejected**.
+
+Steps:
+- **Determine Variables**: 
+  - Input variable: `X_classification`
+  - Target variable: `y_classification`
+- **Build the Classification Pipeline**
+- **Train the Model**: Using `X_classification_train` and `y_classification_train`.
+- **Predict the Classes**
+- **Model Evaluation**: Using **Accuracy**.
